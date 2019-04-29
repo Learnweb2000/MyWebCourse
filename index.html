@@ -1,0 +1,41 @@
+<html>
+    <title> Basics of HTML, Css and Java Script</title>
+    <H1>Welcome</h1>
+    <script>
+        
+        function init() {
+            document.getElementById("name").innerHTML = 'Judy';
+
+            // BONUS
+            var outputString = '<ul>';
+            var hobbies = ['gardening', 'running'];
+            for (let index = 0; index < hobbies.length; index++) {
+                const element = hobbies[index];
+
+                outputString += '<li>' + element + '</li>'
+            }
+            outputString += '</ul>';
+
+            document.getElementById("hobbies").innerHTML = outputString;
+
+        }
+        </script>
+        <style>
+                div {
+                    width: 300px;
+                    padding: 10px;
+                    border: 1px solid purple;
+                    background-color: grey;
+                    color: purple
+                }
+        
+            </style>
+<body onload ="init()">
+    <div id="name"></div>
+    <div id="hobbies"></div>
+   
+
+
+    
+</body>
+</html>
